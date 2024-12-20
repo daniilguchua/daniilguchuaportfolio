@@ -4,28 +4,75 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f0f0f0;
+    }
+    header, section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    header {
+      text-align: center;
+      background: #333;
+      color: #fff;
+    }
+    h1, h2 {
+      font-weight: normal;
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>My Portfolio</h1>
+    <p>Showcasing my projects and skills</p>
   </header>
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I am [Your Name], a budding software developer interested in machine learning and web development. This is my portfolio where I showcase my projects and skills.</p>
-    </section>
 
-    <section id="projects">
-      <h2>Featured Projects</h2>
-      <p>Coming soon!</p>
-    </section>
+  <!-- Existing sections can go above here -->
+  
+  <section id="ml-project">
+    <h2>Machine Learning Project: Interactive Sentiment Analysis</h2>
+    <p>
+      This project demonstrates my experience with Natural Language Processing (NLP), 
+      pre-trained Transformer models, and interactive web interfaces.
+    </p>
+    <ul>
+      <li><strong>Technologies Used:</strong> Python, Hugging Face Transformers, Torch, Gradio</li>
+      <li><strong>Key Features:</strong> 
+        <ul>
+          <li>Custom preprocessing (lowercasing, punctuation removal) before analysis</li>
+          <li>Interactive input: users can type any text and get sentiment predictions</li>
+          <li>Model: DistilBERT-based sentiment classifier</li>
+        </ul>
+      </li>
+    </ul>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>You can reach me at: <a href="mailto:your_email@example.com">your_email@example.com</a></p>
-    </section>
-  </main>
-  <script src="script.js"></script>
+    <!-- Link to the Hugging Face Space -->
+    <p>
+      <a href="https://huggingface.co/spaces/yourusername/my-sentiment-app" target="_blank">
+        Try the Interactive App
+      </a>
+    </p>
+
+    <!-- Link to the GitHub repository code -->
+    <p>
+      <a href="https://github.com/yourusername/my-portfolio/blob/main/app.py" target="_blank">
+        View Source Code on GitHub
+      </a>
+    </p>
+  </section>
+
+  <!-- Add more sections or footer below if you want -->
+  
 </body>
 </html>
